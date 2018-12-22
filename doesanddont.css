@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	background-color: #FFF;
+	font-family: 'Bree Serif', serif;
+	margin: 0;
+}
+.body {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+
+img {
+	text-align: center;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+header {
+	width: 100%;
+	background-color: #FFF;
+	height: 86px;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	position: fixed;
+	opacity: 0.90;
+	box-shadow: 0px 3px 0px 0px #888888;
+}
+header img#logo {
+	cursor: pointer;
+	margin-left: 65px;
+	padding: 0.5;
+}
+ul {
+	list-style: none;
+}
+nav {
+	float: right;
+	padding: 8px 20px 20px 0px;
+}
+nav ul li {
+	display: inline-block;
+	padding: 15px;
+	float: left;
+}
+nav ul li a {
+	text-decoration: none;
+	border-top: 1px solid #b2b2b2;
+	border-bottom: 1px solid #b2b2b2;
+	border-radius: 2px;
+	padding: 7px;
+	background-color: #FFF;
+	color: #000;
+	font-size: 20px;
+}
+nav ul li a:hover {
+	border-top: 1px solid #50394c;
+	border-bottom: 1px solid #50394c;
+	border-radius: 2px;
+	padding: 7px;
+	background-color: #622569;
+	color: #FFF;
+	box-shadow: 5px 5px 2px #888888;
+}
+nav ul li input[type="submit"] {
+	padding: 7px;
+	background-color: #FFF;
+	cursor: pointer;
+	height: 40px;
+	font-size: 20px;
+	margin-top: -6px;
+	border:1px solid #000;
+	transition: background-color 1000ms , color 1000ms;
+	border-radius: 2px;
+}
+nav ul li input[type="submit"]:hover {
+	padding: 7px;
+	background-color: #034f84;
+	color: #FFF;
+	font-size: 20px;
+	cursor: pointer;
+	border:1px solid #000;
+	transition: background-color 1000ms , color 1000ms;
+	border-radius: 2px;
+}
+.clear {
+	clear: both;
+}
+
+/* main content css start from here */
+
+div h1#content-title {
+	text-align: center;
+	color: #c83349;
+	margin-top: 8%;
+}
+section#dos {
+	width: 45%;
+	float: left;
+	margin: 1.5%;
+	padding: 1%;
+	background-color: #588c7e;
+	color: #FFF;
+	box-shadow: 8px 8px 5px #888888;
+	font-family: 'Slabo 27px', serif;
+}
+section#dos:hover {
+	font-size: 22px;
+	border-radius: 5px;
+}
+section#dos h2 {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Sansita', sans-serif;
+}
+section#dont {
+	width: 45%;
+	float: right;
+	margin: 1.5%;
+	padding: 1%;
+	background-color: #588c7e;
+	color: #FFF;
+	border-radius: 5px;
+	box-shadow: 8px 8px 5px #888888;
+	font-family: 'Slabo 27px', serif;
+}
+section#dont:hover {
+    border-radius: 0;
+    font-size: 20.5px;
+}
+section#dont h2 {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Sansita', sans-serif;
+}
+
+ /*@media screen and (max-width: 960px) {
+	section#dos {
+		float: left;
+		width: 98%;
+		margin: 0 auto;
+		margin-bottom: 1%;
+	}
+	section#dont {
+		float: left;
+		width: 98%;
+		margin: 0 auto;
+		margin-top: 1%;
+	}
+	div h1#content-title {
+		margin-top: 238px;
+		text-align: center;
+		width: 98%;
+	}
+}
+*/
+@media screen and (max-width: 478px) {
+	header {
+		position: absolute;
+	}
+}
+@media screen and (max-width: 960px) {
+	header img#logo {
+	cursor: pointer;
+	margin-left: 40px;
+	padding: 0.5;
+    }
+     nav ul li {
+	display: inline-block;
+	padding: 5px;
+	float: left;
+    }
+
+    section#dos {
+		float: left;
+		width: 98%;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-bottom: 1%;
+		padding: 1% 1%;
+		background-color: #622569;
+	}
+	section#dont {
+		float: left;
+		width: 98%;
+		margin-left: 2px;
+		margin-right: 2px;
+		margin-top: 1%;
+		padding: 1% 1%;
+		background-color: #622569;
+	}
+	div h1#content-title {
+		margin-top: 100px;
+		text-align: center;
+		width: 100%;
+		font-size: 20px;
+		margin-bottom: 2%;
+	}
+
+}
